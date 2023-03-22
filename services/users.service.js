@@ -15,6 +15,7 @@ class UsersService {
         nombre: faker.name.findName(),
         email: faker.internet.email(),
         edad: faker.datatype.number({ min: 18, max: 80 }),
+        fecha_ingreso: faker.date.past()
       });
     }
   }
